@@ -22,6 +22,7 @@ h1, h2, h3 {
 h1 {
   font-size:28px;
   font-weight: 500;
+  color: #283592;
 }
 
 h2 {
@@ -30,7 +31,7 @@ h2 {
 }
 
 h3, h4, h5, h6 {
-  color:#494949;
+  color: #E01B84;
   font-weight: 500;
 }
 

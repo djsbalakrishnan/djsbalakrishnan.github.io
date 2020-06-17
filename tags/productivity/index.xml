@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Productivity on Dhiraj Balakrishnan</title>
+    <link>https://dhirajbalakrishnan.dev/tags/productivity/</link>
+    <description>Recent content in Productivity on Dhiraj Balakrishnan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Theme - Potato Dark</copyright>
+    <lastBuildDate>Mon, 15 Jun 2020 21:37:25 +0530</lastBuildDate>
+    
+	<atom:link href="https://dhirajbalakrishnan.dev/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Perfection is Overrated</title>
+      <link>https://dhirajbalakrishnan.dev/posts/perfection-is-overrated/</link>
+      <pubDate>Mon, 15 Jun 2020 21:37:25 +0530</pubDate>
+      
+      <guid>https://dhirajbalakrishnan.dev/posts/perfection-is-overrated/</guid>
+      <description>Practice makes Perfect
+ I have a confession to make, I have been writing and re-writing this post for over two months now. During this interim, the blog&amp;rsquo;s title has changed thrice and the blog content has changed so much that the initial draft is nowhere close to this post. Having said this, you might be wondering why, and I don&amp;rsquo;t blame you for it. After all, this has been a real pain point for me and at one point I thought this is impossible for me to accomplish.</description>
+    </item>
+    
+    <item>
+      <title>Impossible List</title>
+      <link>https://dhirajbalakrishnan.dev/impossible-list/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dhirajbalakrishnan.dev/impossible-list/</guid>
+      <description>We all die. The goal isn&amp;rsquo;t to live forever, the goal is to create something that will.
+ For all of you who are wondering what an impossible list is, let me borrow a few sentences from Thomas Frank who was my inspiration for creating my own Impossible list.
+ The impossible list is an ever-evolving list of experiences that build upon each other, help others as well as yourself, and implore you to take action.</description>
+    </item>
+    
+  </channel>
+</rss>

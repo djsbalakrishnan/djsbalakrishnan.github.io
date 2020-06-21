@@ -1,7 +1,7 @@
 # First Version
 [x] Clean up unnecessary code
-[] Add Portfolio section to the projects 
-[] Add About section to the project 
+[x] Publish impossible list 
 
 # Second Version 
-[] Start a blog
+[x] Add a blog section to your portfolio
+[] Add your projects to your portfolio

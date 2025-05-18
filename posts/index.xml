@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© 2025 - Dhiraj </copyright>
-    <lastBuildDate>Sun, 16 Jul 2023 11:29:21 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 18 May 2025 11:54:31 +0530</lastBuildDate>
     <atom:link href="https://dhirajbalakrishnan.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Journal #01</title>
+      <link>https://dhirajbalakrishnan.dev/posts/journal_01/</link>
+      <pubDate>Sun, 18 May 2025 11:54:31 +0530</pubDate>
+      <guid>https://dhirajbalakrishnan.dev/posts/journal_01/</guid>
+      <description>&lt;h3 id=&#34;-leetcode-problem-of-the-week&#34;&gt;🔧 LeetCode Problem of the Week&lt;/h3&gt;&#xA;&lt;p&gt;This week&amp;rsquo;s LeetCode problem is pretty straightforward, but it hits on a really fundamental idea in DSA.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How We Cooked Up a Podcast in 4 Hours for Less Than the Cost of a Pizza</title>
       <link>https://dhirajbalakrishnan.dev/posts/how-we-cooked-up-a-podcast/</link>

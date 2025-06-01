@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© 2025 - Dhiraj </copyright>
-    <lastBuildDate>Sun, 18 May 2025 11:54:31 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jun 2025 12:15:21 +0530</lastBuildDate>
     <atom:link href="https://dhirajbalakrishnan.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Journal #02</title>
+      <link>https://dhirajbalakrishnan.dev/posts/journal_02/</link>
+      <pubDate>Sun, 01 Jun 2025 12:15:21 +0530</pubDate>
+      <guid>https://dhirajbalakrishnan.dev/posts/journal_02/</guid>
+      <description>&lt;h3 id=&#34;-leetcode-problem-of-the-week&#34;&gt;🔧 LeetCode Problem of the Week&lt;/h3&gt;&#xA;&lt;p&gt;This week, we&amp;rsquo;re diving into a LeetCode question that, while simple, really gets you thinking about different approaches. We&amp;rsquo;ll break down a few ways to solve it and then land on the most optimized one. Here’s the question:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Journal #01</title>
       <link>https://dhirajbalakrishnan.dev/posts/journal_01/</link>

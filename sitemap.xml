@@ -3,7 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dhirajbalakrishnan.dev/</loc>
-    <lastmod>2025-06-01T12:15:21+05:30</lastmod>
+    <lastmod>2025-06-08T20:03:33+05:30</lastmod>
+  </url><url>
+    <loc>https://dhirajbalakrishnan.dev/posts/</loc>
+    <lastmod>2025-06-08T20:03:33+05:30</lastmod>
   </url><url>
     <loc>https://dhirajbalakrishnan.dev/tags/journal/</loc>
     <lastmod>2025-06-01T12:15:21+05:30</lastmod>
@@ -12,9 +15,6 @@
     <lastmod>2025-06-01T12:15:21+05:30</lastmod>
   </url><url>
     <loc>https://dhirajbalakrishnan.dev/tags/newsletter/</loc>
-    <lastmod>2025-06-01T12:15:21+05:30</lastmod>
-  </url><url>
-    <loc>https://dhirajbalakrishnan.dev/posts/</loc>
     <lastmod>2025-06-01T12:15:21+05:30</lastmod>
   </url><url>
     <loc>https://dhirajbalakrishnan.dev/tags/</loc>
@@ -34,9 +34,6 @@
   </url><url>
     <loc>https://dhirajbalakrishnan.dev/posts/how-we-cooked-up-a-podcast/</loc>
     <lastmod>2023-07-16T11:29:21+05:30</lastmod>
-  </url><url>
-    <loc>https://dhirajbalakrishnan.dev/posts/goals2023/</loc>
-    <lastmod>2023-01-01T16:34:52+05:30</lastmod>
   </url><url>
     <loc>https://dhirajbalakrishnan.dev/setup/</loc>
     <lastmod>2022-08-14T10:42:16+05:30</lastmod>

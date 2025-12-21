@@ -30,7 +30,7 @@
 
 <body>
 	<div class="container wrapper post">
-		<link rel="stylesheet" href="/css/custom.css"> 
+		<link rel="stylesheet" href="https://dhirajbalakrishnan.dev/css/custom.css"> 
 <div class="header">
 	<base href="https://dhirajbalakrishnan.dev/">
 	<h1 class="site-title"><a href="https://dhirajbalakrishnan.dev/">Dhiraj Balakrishnan</a></h1>
@@ -43,23 +43,23 @@
 		<ul class="flat">
 			
 			<li>
-				<a href="/posts">Posts</a>
+				<a href="https://dhirajbalakrishnan.dev/posts">Posts</a>
 			</li>
 			
 			<li>
-				<a href="/impossible-list">Impossible List</a>
+				<a href="https://dhirajbalakrishnan.dev/impossible-list">Impossible List</a>
 			</li>
 			
 			<li>
-				<a href="/newsletter">Newsletter</a>
+				<a href="https://dhirajbalakrishnan.dev/newsletter">Newsletter</a>
 			</li>
 			
 			<li>
-				<a href="/setup">Setup</a>
+				<a href="https://dhirajbalakrishnan.dev/setup">Setup</a>
 			</li>
 			
 			<li>
-				<a href="/tags">Tags</a>
+				<a href="https://dhirajbalakrishnan.dev/tags">Tags</a>
 			</li>
 			
 		</ul>
@@ -76,7 +76,7 @@
 			<p>In my previous posts, I’ve talked about how perfection is overrated and the importance of just getting things done. Recently, that philosophy was put to the test when I decided it was time to take control of my data and build a dedicated &ldquo;Digital Headquarters.&rdquo;</p>
 <p>I needed a playground. A place to experiment with automation, host my own tools, and learn Data Engineering concepts <strong>without the &ldquo;meter running&rdquo; anxiety of AWS billing.</strong></p>
 <p>Here is the story of how I built my homelab, the architectural decisions behind the hardware, and the exact terminal commands I used to build the platform.</p>
-<p><img src="/images/HeroShot.jpg" alt="The Lenovo M700 Tiny sitting in its actual spot in your home, with cables plugged in. Caption: The Digital HQ, running silently in the corner"></p>
+<p><img src="https://dhirajbalakrishnan.dev/images/HeroShot.jpg" alt="The Lenovo M700 Tiny sitting in its actual spot in your home, with cables plugged in. Caption: The Digital HQ, running silently in the corner"></p>
 <h2 id="the-architecture-decision-why-x86-beats-arm-for-data-engineering">The Architecture Decision: Why x86 Beats ARM for Data Engineering</h2>
 <p>When you decide to host your own services, the first question is always: <em>Where does it live?</em></p>
 <p>My initial instinct was the <strong>Raspberry Pi 5</strong>, the darling of the homelab community. But as a Data Engineer, I had to look beyond the hype and look at the architecture.</p>
@@ -86,7 +86,7 @@
 </ol>
 <h3 id="the-winner-lenovo-thinkcentre-m700-tiny">The Winner: Lenovo ThinkCentre M700 Tiny</h3>
 <p>I settled on a refurbished Lenovo M700 Tiny. It offers a true <a href="https://www.cpubenchmark.net/cpu.php?cpu=Intel&#43;Core&#43;i5-6500&#43;%40&#43;3.20GHz&amp;id=2599" target="_blank">Intel Core i5 (SkyLake)</a> processor. This ensures I can pull any standard Docker image from the hub and it just works; no &ldquo;ARM tax&rdquo; on performance or compatibility.</p>
-<p><img src="/images/ScaleComparisonShot.jpg" alt="The M700 Tiny next to my phone to show scale"></p>
+<p><img src="https://dhirajbalakrishnan.dev/images/ScaleComparisonShot.jpg" alt="The M700 Tiny next to my phone to show scale"></p>
 <h4 id="the-negotiation-strategy">The Negotiation Strategy</h4>
 <p>I didn&rsquo;t just buy it online. I visited a local vendor, <strong>Recyclekart</strong>, in Delhi. They listed it for <strong>₹13,500</strong>. I walked in and asked for &ldquo;Grade B&rdquo; hardware explicitly stating I didn&rsquo;t care about cosmetic scratches as long as the silicon was intact. That conversation dropped the price to <strong>₹10,000</strong>.</p>
 <p>Now, many might still consider ₹10k steep for 6th Gen hardware. But we have to be realistic, hardware prices have skyrocketed globally, partly thanks to the AI data center boom sucking up inventory.</p>
@@ -99,7 +99,7 @@
 <h2 id="the-network-pattern-bypassing-cgnat-with-zero-trust">The Network Pattern: Bypassing CGNAT with Zero Trust</h2>
 <p>Connecting a home server to the internet is usually a nightmare because most ISPs put residential connections behind a <strong>CGNAT (Carrier-Grade NAT)</strong>. This makes traditional port forwarding impossible because you don&rsquo;t have a real public IP.</p>
 <p>Instead of fighting the ISP, I bypassed them completely using a <strong>Zero Trust</strong> architecture.</p>
-<p><img src="/images/FlowDiagram.jpg" alt="Laptop (Tailscale) -&gt; Internet -&gt; [Bypassing ISP Router] -&gt; Lenovo M700 (Tailscale) -&gt; Docker Containers."></p>
+<p><img src="https://dhirajbalakrishnan.dev/images/FlowDiagram.jpg" alt="Laptop (Tailscale) -&gt; Internet -&gt; [Bypassing ISP Router] -&gt; Lenovo M700 (Tailscale) -&gt; Docker Containers."></p>
 <p><strong>1. The Magic Tunnel (Tailscale)</strong>
 I used Tailscale to create a private, encrypted mesh network. This allows me to SSH into the server from a hotel in Thailand or my parents&rsquo; home in Chennai without exposing port 22 to the public internet.</p>
 <div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#586e75"># Installing Tailscale</span>
@@ -124,7 +124,7 @@ We configured <code>ufw</code> to drop all traffic by default, only allowing the
 </span></span></span><span style="display:flex;"><span><span style="color:#cb4b16"></span>   --restart<span style="color:#719e07">=</span>always <span style="color:#cb4b16">\
 </span></span></span><span style="display:flex;"><span><span style="color:#cb4b16"></span>   -v /var/run/docker.sock:/var/run/docker.sock <span style="color:#cb4b16">\
 </span></span></span><span style="display:flex;"><span><span style="color:#cb4b16"></span>   portainer/portainer-ce:latest
-</span></span></code></pre></div><p><img src="/images/PortainerStacks.png" alt="Portainer Dashboard - Screenshot showing active containers (n8n, nginx, memos) with green &ldquo;Healthy&rdquo; status."></p>
+</span></span></code></pre></div><p><img src="https://dhirajbalakrishnan.dev/images/PortainerStacks.png" alt="Portainer Dashboard - Screenshot showing active containers (n8n, nginx, memos) with green &ldquo;Healthy&rdquo; status."></p>
 <h3 id="core-workloads">Core Workloads</h3>
 <p>Currently, the Digital HQ runs three mission-critical apps:</p>
 <p><strong>1. Nginx Proxy Manager (The Ingress Controller)</strong>
@@ -148,7 +148,7 @@ To handle SSL termination without a static IP, I used a <strong>DNS Challenge</s
 </span></span><span style="display:flex;"><span>   networks:
 </span></span><span style="display:flex;"><span>   proxy_net:
 </span></span><span style="display:flex;"><span>       external: <span style="color:#b58900">true</span>
-</span></span></code></pre></div><p><img src="/images/SecureConnection.png" alt="The Victory - Screenshot of browser address bar showing the green SSL Padlock next to your domain."></p>
+</span></span></code></pre></div><p><img src="https://dhirajbalakrishnan.dev/images/SecureConnection.png" alt="The Victory - Screenshot of browser address bar showing the green SSL Padlock next to your domain."></p>
 <p><strong>2. n8n (The Orchestrator)</strong>
 This is my self-hosted automation bus, connecting APIs and routing alerts.</p>
 <div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>   version: <span style="color:#2aa198">&#39;3&#39;</span>

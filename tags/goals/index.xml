@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Goals on Dhiraj Balakrishnan</title>
-    <link>http://localhost:51081/tags/goals/</link>
+    <link>https://dhirajbalakrishnan.dev/tags/goals/</link>
     <description>Recent content in Goals on Dhiraj Balakrishnan</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© 2025 - Dhiraj </copyright>
     <lastBuildDate>Sun, 16 Jul 2023 11:29:21 +0530</lastBuildDate>
-    <atom:link href="http://localhost:51081/tags/goals/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dhirajbalakrishnan.dev/tags/goals/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How We Cooked Up a Podcast in 4 Hours for Less Than the Cost of a Pizza</title>
-      <link>http://localhost:51081/posts/how-we-cooked-up-a-podcast/</link>
+      <link>https://dhirajbalakrishnan.dev/posts/how-we-cooked-up-a-podcast/</link>
       <pubDate>Sun, 16 Jul 2023 11:29:21 +0530</pubDate>
-      <guid>http://localhost:51081/posts/how-we-cooked-up-a-podcast/</guid>
+      <guid>https://dhirajbalakrishnan.dev/posts/how-we-cooked-up-a-podcast/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Starting a podcast with a friend doesn&amp;rsquo;t have to be as complicated as a five-course meal. With a dash of creativity, a sprinkle of laughter, and the right ingredients, you can whip up your own brand in no time.&lt;/p&gt;</description>
     </item>
   </channel>

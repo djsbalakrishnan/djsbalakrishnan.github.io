@@ -2,73 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dhirajbalakrishnan.dev/</loc>
-    <lastmod>2025-06-08T20:03:33+05:30</lastmod>
+    <loc>http://localhost:51081/posts/building_a_private_data_center_for_10k/</loc>
+    <lastmod>2025-12-21T18:39:10+05:30</lastmod>
   </url><url>
-    <loc>https://dhirajbalakrishnan.dev/posts/</loc>
-    <lastmod>2025-06-08T20:03:33+05:30</lastmod>
+    <loc>http://localhost:51081/</loc>
+    <lastmod>2025-12-21T18:39:10+05:30</lastmod>
   </url><url>
-    <loc>https://dhirajbalakrishnan.dev/tags/journal/</loc>
+    <loc>http://localhost:51081/posts/</loc>
+    <lastmod>2025-12-21T18:39:10+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:51081/tags/journal/</loc>
+    <lastmod>2025-09-26T13:57:41+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:51081/posts/journal_03/</loc>
+    <lastmod>2025-09-26T13:57:41+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:51081/tags/newsletter/</loc>
+    <lastmod>2025-09-26T13:57:41+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:51081/tags/</loc>
+    <lastmod>2025-09-26T13:57:41+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:51081/posts/journal_02/</loc>
     <lastmod>2025-06-01T12:15:21+05:30</lastmod>
   </url><url>
-    <loc>https://dhirajbalakrishnan.dev/posts/journal_02/</loc>
-    <lastmod>2025-06-01T12:15:21+05:30</lastmod>
-  </url><url>
-    <loc>https://dhirajbalakrishnan.dev/tags/newsletter/</loc>
-    <lastmod>2025-06-01T12:15:21+05:30</lastmod>
-  </url><url>
-    <loc>https://dhirajbalakrishnan.dev/tags/</loc>
-    <lastmod>2025-06-01T12:15:21+05:30</lastmod>
-  </url><url>
-    <loc>https://dhirajbalakrishnan.dev/posts/journal_01/</loc>
+    <loc>http://localhost:51081/posts/journal_01/</loc>
     <lastmod>2025-05-18T11:54:31+05:30</lastmod>
   </url><url>
-    <loc>https://dhirajbalakrishnan.dev/newsletter/</loc>
+    <loc>http://localhost:51081/newsletter/</loc>
     <lastmod>2025-05-08T09:00:00+05:30</lastmod>
   </url><url>
-    <loc>https://dhirajbalakrishnan.dev/tags/experiences/</loc>
+    <loc>http://localhost:51081/tags/experiences/</loc>
     <lastmod>2023-07-16T11:29:21+05:30</lastmod>
   </url><url>
-    <loc>https://dhirajbalakrishnan.dev/tags/goals/</loc>
+    <loc>http://localhost:51081/tags/goals/</loc>
     <lastmod>2023-07-16T11:29:21+05:30</lastmod>
   </url><url>
-    <loc>https://dhirajbalakrishnan.dev/posts/how-we-cooked-up-a-podcast/</loc>
+    <loc>http://localhost:51081/posts/how-we-cooked-up-a-podcast/</loc>
     <lastmod>2023-07-16T11:29:21+05:30</lastmod>
   </url><url>
-    <loc>https://dhirajbalakrishnan.dev/setup/</loc>
+    <loc>http://localhost:51081/setup/</loc>
     <lastmod>2022-08-14T10:42:16+05:30</lastmod>
   </url><url>
-    <loc>https://dhirajbalakrishnan.dev/tags/covid/</loc>
+    <loc>http://localhost:51081/tags/covid/</loc>
     <lastmod>2020-08-29T22:22:10+05:30</lastmod>
   </url><url>
-    <loc>https://dhirajbalakrishnan.dev/tags/hackathon/</loc>
+    <loc>http://localhost:51081/tags/hackathon/</loc>
     <lastmod>2020-08-29T22:22:10+05:30</lastmod>
   </url><url>
-    <loc>https://dhirajbalakrishnan.dev/posts/organizing-a-hackathon-during-covid-pandemic/</loc>
+    <loc>http://localhost:51081/posts/organizing-a-hackathon-during-covid-pandemic/</loc>
     <lastmod>2020-08-29T22:22:10+05:30</lastmod>
   </url><url>
-    <loc>https://dhirajbalakrishnan.dev/tags/analytics/</loc>
+    <loc>http://localhost:51081/tags/analytics/</loc>
     <lastmod>2020-07-10T22:22:34+05:30</lastmod>
   </url><url>
-    <loc>https://dhirajbalakrishnan.dev/projects/ipl-analytics/</loc>
+    <loc>http://localhost:51081/projects/ipl-analytics/</loc>
     <lastmod>2020-07-10T22:22:34+05:30</lastmod>
   </url><url>
-    <loc>https://dhirajbalakrishnan.dev/projects/</loc>
+    <loc>http://localhost:51081/projects/</loc>
     <lastmod>2020-07-10T22:22:34+05:30</lastmod>
   </url><url>
-    <loc>https://dhirajbalakrishnan.dev/posts/5-leadership-lessons-from-my-personal-experience/</loc>
+    <loc>http://localhost:51081/posts/5-leadership-lessons-from-my-personal-experience/</loc>
     <lastmod>2020-06-19T22:21:47+05:30</lastmod>
   </url><url>
-    <loc>https://dhirajbalakrishnan.dev/tags/leadership/</loc>
+    <loc>http://localhost:51081/tags/leadership/</loc>
     <lastmod>2020-06-19T22:21:47+05:30</lastmod>
   </url><url>
-    <loc>https://dhirajbalakrishnan.dev/posts/perfection-is-overrated/</loc>
+    <loc>http://localhost:51081/posts/perfection-is-overrated/</loc>
     <lastmod>2020-06-15T22:21:23+05:30</lastmod>
   </url><url>
-    <loc>https://dhirajbalakrishnan.dev/tags/productivity/</loc>
+    <loc>http://localhost:51081/tags/productivity/</loc>
     <lastmod>2020-06-15T22:21:23+05:30</lastmod>
   </url><url>
-    <loc>https://dhirajbalakrishnan.dev/impossible-list/</loc>
+    <loc>http://localhost:51081/impossible-list/</loc>
     <lastmod>2020-06-06T22:20:05+05:30</lastmod>
   </url>
 </urlset>

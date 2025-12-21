@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=51081&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Building a private data center for 10k: Why I Ditched the Raspberry Pi - Dhiraj Balakrishnan</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:url" content="http://localhost:51081/posts/building_a_private_data_center_for_10k/">
+  <meta property="og:site_name" content="Dhiraj Balakrishnan">
+  <meta property="og:title" content="Building a private data center for 10k: Why I Ditched the Raspberry Pi">
+  <meta property="og:description" content="In my previous posts, I’ve talked about how perfection is overrated and the importance of just getting things done. Recently, that philosophy was put to the test when I decided it was time to take control of my data and build a dedicated “Digital Headquarters.”">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-12-21T18:39:10+05:30">
+    <meta property="article:modified_time" content="2025-12-21T18:39:10+05:30">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Building a private data center for 10k: Why I Ditched the Raspberry Pi">
+  <meta name="twitter:description" content="In my previous posts, I’ve talked about how perfection is overrated and the importance of just getting things done. Recently, that philosophy was put to the test when I decided it was time to take control of my data and build a dedicated “Digital Headquarters.”">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:51081/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:51081/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="http://localhost:51081/css/custom.css" />
+	
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="http://localhost:51081/js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<link rel="stylesheet" href="/css/custom.css"> 
+<div class="header">
+	<base href="http://localhost:51081/">
+	<h1 class="site-title"><a href="http://localhost:51081/">Dhiraj Balakrishnan</a></h1>
+	<div class="site-description"><h2>Software Engineer</h2><nav class="nav social">
+			<ul class="flat"><a href="https://www.linkedin.com/in/djsbalakrishnan/" title="LinkedIn"><i data-feather="linkedin"></i></a><a href="https://github.com/djsbalakrishnan" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/djsbalakrishnan" title="Twitter"><i data-feather="twitter"></i></a><a href="https://www.youtube.com/@djsbala" title="Youtube"><i data-feather="youtube"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/posts">Posts</a>
+			</li>
+			
+			<li>
+				<a href="/impossible-list">Impossible List</a>
+			</li>
+			
+			<li>
+				<a href="/newsletter">Newsletter</a>
+			</li>
+			
+			<li>
+				<a href="/setup">Setup</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Building a private data center for 10k: Why I Ditched the Raspberry Pi</h1>
+			<div class="meta">Posted at &mdash; Dec 21, 2025</div>
+		</div>
+
+		<div class="markdown">
+			<p>In my previous posts, I’ve talked about how perfection is overrated and the importance of just getting things done. Recently, that philosophy was put to the test when I decided it was time to take control of my data and build a dedicated &ldquo;Digital Headquarters.&rdquo;</p>
+<p>I needed a playground. A place to experiment with automation, host my own tools, and learn Data Engineering concepts <strong>without the &ldquo;meter running&rdquo; anxiety of AWS billing.</strong></p>
+<p>Here is the story of how I built my homelab, the architectural decisions behind the hardware, and the exact terminal commands I used to build the platform.</p>
+<p><img src="/images/HeroShot.jpg" alt="The Lenovo M700 Tiny sitting in its actual spot in your home, with cables plugged in. Caption: The Digital HQ, running silently in the corner"></p>
+<h2 id="the-architecture-decision-why-x86-beats-arm-for-data-engineering">The Architecture Decision: Why x86 Beats ARM for Data Engineering</h2>
+<p>When you decide to host your own services, the first question is always: <em>Where does it live?</em></p>
+<p>My initial instinct was the <strong>Raspberry Pi 5</strong>, the darling of the homelab community. But as a Data Engineer, I had to look beyond the hype and look at the architecture.</p>
+<ol>
+<li><strong>The Compatibility Bottleneck:</strong> The Pi runs on ARM architecture. While ARM support is improving, many &ldquo;Big Data&rdquo; legacy stacks (older Hadoop clusters, Oracle DBs, specific Spark builds) are still optimized for <strong>amd64 (x86)</strong>. I didn&rsquo;t want to waste weekends debugging multi-arch build failures or dealing with slow emulation layers just to run a standard Docker container.</li>
+<li><strong>The Cost-Per-Core:</strong> By the time you buy a Pi 5 (8GB), active cooler, power supply, NVMe HAT, and SSD, you are looking at <strong>₹14,000+</strong>.</li>
+</ol>
+<h3 id="the-winner-lenovo-thinkcentre-m700-tiny">The Winner: Lenovo ThinkCentre M700 Tiny</h3>
+<p>I settled on a refurbished Lenovo M700 Tiny. It offers a true <a href="https://www.cpubenchmark.net/cpu.php?cpu=Intel&#43;Core&#43;i5-6500&#43;%40&#43;3.20GHz&amp;id=2599" target="_blank">Intel Core i5 (SkyLake)</a> processor. This ensures I can pull any standard Docker image from the hub and it just works; no &ldquo;ARM tax&rdquo; on performance or compatibility.</p>
+<p><img src="/images/ScaleComparisonShot.jpg" alt="The M700 Tiny next to my phone to show scale"></p>
+<h4 id="the-negotiation-strategy">The Negotiation Strategy</h4>
+<p>I didn&rsquo;t just buy it online. I visited a local vendor, <strong>Recyclekart</strong>, in Delhi. They listed it for <strong>₹13,500</strong>. I walked in and asked for &ldquo;Grade B&rdquo; hardware explicitly stating I didn&rsquo;t care about cosmetic scratches as long as the silicon was intact. That conversation dropped the price to <strong>₹10,000</strong>.</p>
+<p>Now, many might still consider ₹10k steep for 6th Gen hardware. But we have to be realistic, hardware prices have skyrocketed globally, partly thanks to the AI data center boom sucking up inventory.</p>
+<p>Could I have saved another ₹1,500 by trekking all the way to Nehru Place? Maybe. But it is December in Delhi. To quote <a href="https://www.youtube.com/watch?v=jU83SwFeXCQ&amp;t=79s" target="_blank">Zakir Khan</a>:</p>
+<blockquote>
+<p><em>&ldquo;Mard ko dard nahi hota hoga manliya, par thand lagti hai.&rdquo;</em></p></blockquote>
+<blockquote>
+<p><em>(Men might not feel pain, but they definitely feel cold.)</em></p></blockquote>
+<p>Saving ₹1,500 wasn&rsquo;t worth freezing on a bike ride across the city. I walked away with an enterprise-grade x86 server for the price of a toy, without the frostbite.</p>
+<h2 id="the-network-pattern-bypassing-cgnat-with-zero-trust">The Network Pattern: Bypassing CGNAT with Zero Trust</h2>
+<p>Connecting a home server to the internet is usually a nightmare because most ISPs put residential connections behind a <strong>CGNAT (Carrier-Grade NAT)</strong>. This makes traditional port forwarding impossible because you don&rsquo;t have a real public IP.</p>
+<p>Instead of fighting the ISP, I bypassed them completely using a <strong>Zero Trust</strong> architecture.</p>
+<p><img src="/images/FlowDiagram.jpg" alt="Laptop (Tailscale) -&gt; Internet -&gt; [Bypassing ISP Router] -&gt; Lenovo M700 (Tailscale) -&gt; Docker Containers."></p>
+<p><strong>1. The Magic Tunnel (Tailscale)</strong>
+I used Tailscale to create a private, encrypted mesh network. This allows me to SSH into the server from a hotel in Thailand or my parents&rsquo; home in Chennai without exposing port 22 to the public internet.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#586e75"># Installing Tailscale</span>
+</span></span><span style="display:flex;"><span>curl -fsSL https://tailscale.com/install.sh | sh
+</span></span><span style="display:flex;"><span>sudo tailscale up
+</span></span></code></pre></div><p><strong>2. The Firewall (UFW)</strong>
+We configured <code>ufw</code> to drop all traffic by default, only allowing the encrypted Tailscale interface.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#586e75"># Deny everything incoming, allow only SSH and Tailscale interface</span>
+</span></span><span style="display:flex;"><span>sudo ufw default deny incoming
+</span></span><span style="display:flex;"><span>sudo ufw allow in on tailscale0
+</span></span><span style="display:flex;"><span>sudo ufw <span style="color:#b58900">enable</span>
+</span></span></code></pre></div><h3 id="the-reliability-protocol-travel-proofing">The Reliability Protocol (Travel-Proofing)</h3>
+<p>Since I travel often, I can&rsquo;t physically reboot the server if there&rsquo;s a power outage in Delhi. I configured the BIOS <strong>&ldquo;Restore on AC Power Loss&rdquo;</strong> setting to &ldquo;Power On.&rdquo;</p>
+<p>This turns a fragile desktop into a self-healing node that comes back online automatically after a blackout.</p>
+<h2 id="the-software-stack-containerizing-the-platform">The Software Stack: Containerizing the Platform</h2>
+<p>I avoided installing tools directly on the OS to keep the system clean. <strong>Docker</strong> was non-negotiable for this platform.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#586e75"># Installing Docker</span>
+</span></span><span style="display:flex;"><span>curl -fsSL https://get.docker.com -o get-docker.sh
+</span></span><span style="display:flex;"><span>sudo sh get-docker.sh
+</span></span></code></pre></div><p>To manage the cluster visually, I deployed <strong>Portainer</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run -d -p 9000:9000 --name portainer <span style="color:#cb4b16">\
+</span></span></span><span style="display:flex;"><span><span style="color:#cb4b16"></span>   --restart<span style="color:#719e07">=</span>always <span style="color:#cb4b16">\
+</span></span></span><span style="display:flex;"><span><span style="color:#cb4b16"></span>   -v /var/run/docker.sock:/var/run/docker.sock <span style="color:#cb4b16">\
+</span></span></span><span style="display:flex;"><span><span style="color:#cb4b16"></span>   portainer/portainer-ce:latest
+</span></span></code></pre></div><p><img src="/images/PortainerStacks.png" alt="Portainer Dashboard - Screenshot showing active containers (n8n, nginx, memos) with green &ldquo;Healthy&rdquo; status."></p>
+<h3 id="core-workloads">Core Workloads</h3>
+<p>Currently, the Digital HQ runs three mission-critical apps:</p>
+<p><strong>1. Nginx Proxy Manager (The Ingress Controller)</strong>
+To handle SSL termination without a static IP, I used a <strong>DNS Challenge</strong> via Cloudflare. By generating API tokens and feeding them into Nginx, I can auto-renew SSL certificates even behind the CGNAT.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>   version: <span style="color:#2aa198">&#39;3&#39;</span>
+</span></span><span style="display:flex;"><span>   services:
+</span></span><span style="display:flex;"><span>   app:
+</span></span><span style="display:flex;"><span>       image: <span style="color:#2aa198">&#39;jc21/nginx-proxy-manager:latest&#39;</span>
+</span></span><span style="display:flex;"><span>       container_name: proxy_manager
+</span></span><span style="display:flex;"><span>       restart: unless-stopped
+</span></span><span style="display:flex;"><span>       ports:
+</span></span><span style="display:flex;"><span>       - <span style="color:#2aa198">&#39;80:80&#39;</span>      <span style="color:#586e75"># Public Web Port (HTTP)</span>
+</span></span><span style="display:flex;"><span>       - <span style="color:#2aa198">&#39;81:81&#39;</span>      <span style="color:#586e75"># Admin Interface Port</span>
+</span></span><span style="display:flex;"><span>       - <span style="color:#2aa198">&#39;443:443&#39;</span>    <span style="color:#586e75"># HTTPS Port</span>
+</span></span><span style="display:flex;"><span>       volumes:
+</span></span><span style="display:flex;"><span>       - ./data:/data
+</span></span><span style="display:flex;"><span>       - ./letsencrypt:/etc/letsencrypt
+</span></span><span style="display:flex;"><span>       networks:
+</span></span><span style="display:flex;"><span>       - proxy_net
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   networks:
+</span></span><span style="display:flex;"><span>   proxy_net:
+</span></span><span style="display:flex;"><span>       external: <span style="color:#b58900">true</span>
+</span></span></code></pre></div><p><img src="/images/SecureConnection.png" alt="The Victory - Screenshot of browser address bar showing the green SSL Padlock next to your domain."></p>
+<p><strong>2. n8n (The Orchestrator)</strong>
+This is my self-hosted automation bus, connecting APIs and routing alerts.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>   version: <span style="color:#2aa198">&#39;3&#39;</span>
+</span></span><span style="display:flex;"><span>   services:
+</span></span><span style="display:flex;"><span>   n8n:
+</span></span><span style="display:flex;"><span>       image: n8nio/n8n:latest
+</span></span><span style="display:flex;"><span>       container_name: n8n
+</span></span><span style="display:flex;"><span>       restart: always
+</span></span><span style="display:flex;"><span>       environment:
+</span></span><span style="display:flex;"><span>       - <span style="color:#268bd2">N8N_HOST</span><span style="color:#719e07">=</span>n8n.dhirajbalakrishnan.dev
+</span></span><span style="display:flex;"><span>       - <span style="color:#268bd2">N8N_PORT</span><span style="color:#719e07">=</span><span style="color:#2aa198">5678</span>
+</span></span><span style="display:flex;"><span>       - <span style="color:#268bd2">N8N_PROTOCOL</span><span style="color:#719e07">=</span>https
+</span></span><span style="display:flex;"><span>       - <span style="color:#268bd2">WEBHOOK_URL</span><span style="color:#719e07">=</span>https://n8n.dhirajbalakrishnan.dev/
+</span></span><span style="display:flex;"><span>       - <span style="color:#268bd2">GENERIC_TIMEZONE</span><span style="color:#719e07">=</span>Asia/Kolkata
+</span></span><span style="display:flex;"><span>       - <span style="color:#268bd2">N8N_SECURE_COOKIE</span><span style="color:#719e07">=</span><span style="color:#b58900">true</span>
+</span></span><span style="display:flex;"><span>       ports:
+</span></span><span style="display:flex;"><span>       - <span style="color:#2aa198">&#34;5678:5678&#34;</span>
+</span></span><span style="display:flex;"><span>       volumes:
+</span></span><span style="display:flex;"><span>       - n8n_data:/home/node/.n8n
+</span></span><span style="display:flex;"><span>       networks:
+</span></span><span style="display:flex;"><span>       - proxy_net
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   volumes:
+</span></span><span style="display:flex;"><span>   n8n_data:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   networks:
+</span></span><span style="display:flex;"><span>   proxy_net:
+</span></span><span style="display:flex;"><span>       external: <span style="color:#b58900">true</span>
+</span></span></code></pre></div><p><strong>3. Memos (The Knowledge Graph)</strong>
+A lightweight, privacy-focused tool for capturing code snippets and engineering notes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>   version: <span style="color:#2aa198">&#34;3&#34;</span>
+</span></span><span style="display:flex;"><span>   services:
+</span></span><span style="display:flex;"><span>   memos:
+</span></span><span style="display:flex;"><span>       image: neosmemo/memos:latest
+</span></span><span style="display:flex;"><span>       container_name: memos
+</span></span><span style="display:flex;"><span>       restart: unless-stopped
+</span></span><span style="display:flex;"><span>       ports:
+</span></span><span style="display:flex;"><span>       - <span style="color:#2aa198">&#34;5230:5230&#34;</span>
+</span></span><span style="display:flex;"><span>       volumes:
+</span></span><span style="display:flex;"><span>       - memos_data:/var/opt/memos
+</span></span><span style="display:flex;"><span>       networks:
+</span></span><span style="display:flex;"><span>       - proxy_net
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   volumes:
+</span></span><span style="display:flex;"><span>   memos_data:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   networks:
+</span></span><span style="display:flex;"><span>   proxy_net:
+</span></span><span style="display:flex;"><span>       external: <span style="color:#b58900">true</span>
+</span></span></code></pre></div><h2 id="whats-next">What&rsquo;s Next?</h2>
+<p>Right now, the platform is stable. The immediate goal isn&rsquo;t to add more &ldquo;toys&rdquo; but to use this infrastructure to simulate real-world <strong>Data Engineering scenarios</strong>.</p>
+<p>I plan to use this refurbished beast to deploy heavy JVM workloads, perhaps an Airflow scheduler or a Spark job that would have choked a Raspberry Pi.</p>
+<p>The best part? It’s <em>mine</em>. No subscription fees, no data harvesting, just pure silicon and code.</p>
+<p>I’ll keep you posted on the data engineering experiments as they happen. Until then, keep building.</p>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+			
+		</div></div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> © 2025 - Dhiraj  |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+</body>
+</html>

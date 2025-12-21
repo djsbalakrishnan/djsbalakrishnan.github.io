@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Experiences on Dhiraj Balakrishnan</title>
-    <link>https://dhirajbalakrishnan.dev/tags/experiences/</link>
+    <link>http://localhost:51081/tags/experiences/</link>
     <description>Recent content in Experiences on Dhiraj Balakrishnan</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© 2025 - Dhiraj </copyright>
     <lastBuildDate>Sun, 16 Jul 2023 11:29:21 +0530</lastBuildDate>
-    <atom:link href="https://dhirajbalakrishnan.dev/tags/experiences/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:51081/tags/experiences/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How We Cooked Up a Podcast in 4 Hours for Less Than the Cost of a Pizza</title>
-      <link>https://dhirajbalakrishnan.dev/posts/how-we-cooked-up-a-podcast/</link>
+      <link>http://localhost:51081/posts/how-we-cooked-up-a-podcast/</link>
       <pubDate>Sun, 16 Jul 2023 11:29:21 +0530</pubDate>
-      <guid>https://dhirajbalakrishnan.dev/posts/how-we-cooked-up-a-podcast/</guid>
+      <guid>http://localhost:51081/posts/how-we-cooked-up-a-podcast/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Starting a podcast with a friend doesn&amp;rsquo;t have to be as complicated as a five-course meal. With a dash of creativity, a sprinkle of laughter, and the right ingredients, you can whip up your own brand in no time.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Organizing a Hackathon During Covid Pandemic</title>
-      <link>https://dhirajbalakrishnan.dev/posts/organizing-a-hackathon-during-covid-pandemic/</link>
+      <link>http://localhost:51081/posts/organizing-a-hackathon-during-covid-pandemic/</link>
       <pubDate>Sat, 29 Aug 2020 22:22:10 +0530</pubDate>
-      <guid>https://dhirajbalakrishnan.dev/posts/organizing-a-hackathon-during-covid-pandemic/</guid>
+      <guid>http://localhost:51081/posts/organizing-a-hackathon-during-covid-pandemic/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;You just fight to live another day.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Just after completing my term as an Innovation Committee Lead for ITDP Hyderabad, I got an opportunity to work with the DELL TIDE Hackathon team. It was sheer coincidence that I met the right person at the right place, at the right time, with the right response. Little did I know back then that it would have such a profound impact on my work life. In this blog post, I will be journaling about my experience conducting my first Hackathon for Dell India and Malaysia in association with Dell TIDE Team. Let’s get started.&lt;/p&gt;</description>
     </item>
     <item>
       <title>5 Leadership Lessons From My Personal Experience</title>
-      <link>https://dhirajbalakrishnan.dev/posts/5-leadership-lessons-from-my-personal-experience/</link>
+      <link>http://localhost:51081/posts/5-leadership-lessons-from-my-personal-experience/</link>
       <pubDate>Fri, 19 Jun 2020 22:21:47 +0530</pubDate>
-      <guid>https://dhirajbalakrishnan.dev/posts/5-leadership-lessons-from-my-personal-experience/</guid>
+      <guid>http://localhost:51081/posts/5-leadership-lessons-from-my-personal-experience/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;It is not the genius at the top giving directions that makes people great. It is great people that make the guy at the top look like a genius.&lt;/p&gt;</description>
     </item>
   </channel>

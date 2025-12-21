@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Leadership on Dhiraj Balakrishnan</title>
-    <link>https://dhirajbalakrishnan.dev/tags/leadership/</link>
+    <link>http://localhost:51081/tags/leadership/</link>
     <description>Recent content in Leadership on Dhiraj Balakrishnan</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© 2025 - Dhiraj </copyright>
     <lastBuildDate>Fri, 19 Jun 2020 22:21:47 +0530</lastBuildDate>
-    <atom:link href="https://dhirajbalakrishnan.dev/tags/leadership/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:51081/tags/leadership/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>5 Leadership Lessons From My Personal Experience</title>
-      <link>https://dhirajbalakrishnan.dev/posts/5-leadership-lessons-from-my-personal-experience/</link>
+      <link>http://localhost:51081/posts/5-leadership-lessons-from-my-personal-experience/</link>
       <pubDate>Fri, 19 Jun 2020 22:21:47 +0530</pubDate>
-      <guid>https://dhirajbalakrishnan.dev/posts/5-leadership-lessons-from-my-personal-experience/</guid>
+      <guid>http://localhost:51081/posts/5-leadership-lessons-from-my-personal-experience/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;It is not the genius at the top giving directions that makes people great. It is great people that make the guy at the top look like a genius.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,32 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Journal on Dhiraj Balakrishnan</title>
-    <link>https://dhirajbalakrishnan.dev/tags/journal/</link>
+    <link>http://localhost:1313/tags/journal/</link>
     <description>Recent content in Journal on Dhiraj Balakrishnan</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <copyright>© 2025 - Dhiraj </copyright>
-    <lastBuildDate>Fri, 26 Sep 2025 13:57:41 +0530</lastBuildDate>
-    <atom:link href="https://dhirajbalakrishnan.dev/tags/journal/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Journal #03</title>
-      <link>https://dhirajbalakrishnan.dev/posts/journal_03/</link>
-      <pubDate>Fri, 26 Sep 2025 13:57:41 +0530</pubDate>
-      <guid>https://dhirajbalakrishnan.dev/posts/journal_03/</guid>
-      <description>&lt;h3 id=&#34;-leetcode-problem-of-the-week&#34;&gt;🔧 LeetCode Problem of the Week&lt;/h3&gt;&#xA;&lt;p&gt;This week, we&amp;rsquo;re diving into a LeetCode question that, while simple, really gets you thinking about different approaches. We&amp;rsquo;ll break down a few ways to solve it and then land on the most optimized one. Here’s the question:&lt;/p&gt;</description>
-    </item>
+    <copyright>© 2026 - Dhiraj </copyright>
+    <lastBuildDate>Sun, 01 Jun 2025 12:15:21 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/journal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Journal #02</title>
-      <link>https://dhirajbalakrishnan.dev/posts/journal_02/</link>
+      <link>http://localhost:1313/posts/journal_02/</link>
       <pubDate>Sun, 01 Jun 2025 12:15:21 +0530</pubDate>
-      <guid>https://dhirajbalakrishnan.dev/posts/journal_02/</guid>
+      <guid>http://localhost:1313/posts/journal_02/</guid>
       <description>&lt;h3 id=&#34;-leetcode-problem-of-the-week&#34;&gt;🔧 LeetCode Problem of the Week&lt;/h3&gt;&#xA;&lt;p&gt;This week, we&amp;rsquo;re diving into a LeetCode question that, while simple, really gets you thinking about different approaches. We&amp;rsquo;ll break down a few ways to solve it and then land on the most optimized one. Here’s the question:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Journal #01</title>
-      <link>https://dhirajbalakrishnan.dev/posts/journal_01/</link>
+      <link>http://localhost:1313/posts/journal_01/</link>
       <pubDate>Sun, 18 May 2025 11:54:31 +0530</pubDate>
-      <guid>https://dhirajbalakrishnan.dev/posts/journal_01/</guid>
+      <guid>http://localhost:1313/posts/journal_01/</guid>
       <description>&lt;h3 id=&#34;-leetcode-problem-of-the-week&#34;&gt;🔧 LeetCode Problem of the Week&lt;/h3&gt;&#xA;&lt;p&gt;This week&amp;rsquo;s LeetCode problem is pretty straightforward, but it hits on a really fundamental idea in DSA.&lt;/p&gt;</description>
     </item>
   </channel>

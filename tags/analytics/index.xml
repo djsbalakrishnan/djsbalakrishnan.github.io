@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Analytics on Dhiraj Balakrishnan</title>
-    <link>https://dhirajbalakrishnan.dev/tags/analytics/</link>
+    <link>http://localhost:1313/tags/analytics/</link>
     <description>Recent content in Analytics on Dhiraj Balakrishnan</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <copyright>© 2025 - Dhiraj </copyright>
+    <copyright>© 2026 - Dhiraj </copyright>
     <lastBuildDate>Fri, 10 Jul 2020 22:22:34 +0530</lastBuildDate>
-    <atom:link href="https://dhirajbalakrishnan.dev/tags/analytics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/analytics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ipl Analytics</title>
-      <link>https://dhirajbalakrishnan.dev/projects/ipl-analytics/</link>
+      <link>http://localhost:1313/projects/ipl-analytics/</link>
       <pubDate>Fri, 10 Jul 2020 22:22:34 +0530</pubDate>
-      <guid>https://dhirajbalakrishnan.dev/projects/ipl-analytics/</guid>
+      <guid>http://localhost:1313/projects/ipl-analytics/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;images/IPL.jpg&#34; alt=&#34;Dharamshala&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;&#xA;&lt;p&gt;We’ve all been engulfed by the uncertainty that is COVID-19. It doesn’t seem to be going anywhere anytime soon. Of all the stuff that has come to an indefinite standstill, sporting action, especially cricket is something that we are missing the most.&lt;/p&gt;</description>
     </item>
   </channel>

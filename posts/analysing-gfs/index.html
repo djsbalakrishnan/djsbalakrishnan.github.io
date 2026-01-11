@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Analysing GFS - Dhiraj Balakrishnan</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:url" content="http://localhost:1313/posts/analysing-gfs/">
+  <meta property="og:site_name" content="Dhiraj Balakrishnan">
+  <meta property="og:title" content="Analysing GFS">
+  <meta property="og:description" content="Why did Google build a file system with a single point of failure? I break down the GFS architecture, its trade-offs, and how it paved the way for modern Big Data systems like HDFS.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-01-11T00:00:00+05:30">
+    <meta property="article:modified_time" content="2026-01-11T00:00:00+05:30">
+    <meta property="article:tag" content="Whitepaper Analysis">
+    <meta property="article:tag" content="Data Engineering">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Analysing GFS">
+  <meta name="twitter:description" content="Why did Google build a file system with a single point of failure? I break down the GFS architecture, its trade-offs, and how it paved the way for modern Big Data systems like HDFS.">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="http://localhost:1313/css/custom.css" />
+	
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="http://localhost:1313/js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<link rel="stylesheet" href="http://localhost:1313/css/custom.css"> 
+<div class="header">
+	<base href="http://localhost:1313/">
+	<h1 class="site-title"><a href="http://localhost:1313/">Dhiraj Balakrishnan</a></h1>
+	<div class="site-description"><h2>Software Engineer</h2><nav class="nav social">
+			<ul class="flat"><a href="https://www.linkedin.com/in/djsbalakrishnan/" title="LinkedIn"><i data-feather="linkedin"></i></a><a href="https://github.com/djsbalakrishnan" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/djsbalakrishnan" title="Twitter"><i data-feather="twitter"></i></a><a href="https://www.youtube.com/@djsbala" title="Youtube"><i data-feather="youtube"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="http://localhost:1313/posts">Posts</a>
+			</li>
+			
+			<li>
+				<a href="http://localhost:1313/impossible-list">Impossible List</a>
+			</li>
+			
+			<li>
+				<a href="http://localhost:1313/newsletter">Newsletter</a>
+			</li>
+			
+			<li>
+				<a href="http://localhost:1313/setup">Setup</a>
+			</li>
+			
+			<li>
+				<a href="http://localhost:1313/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Analysing GFS</h1>
+			<div class="meta">Posted at &mdash; Jan 11, 2026</div>
+		</div>
+
+		<div class="markdown">
+			<p>Distributed systems aren&rsquo;t learned by memorizing definitions. They are learned by studying the trade-offs made by the giants.</p>
+<p>The <strong>Google File System (GFS)</strong> paper (2003) is the grandfather of modern Big Data (HDFS, S3, <strong>Colossus</strong>). But let&rsquo;s be honest—reading a 15-page academic paper is dry.</p>
+<p>I spent the weekend breaking down the paper and annotating the critical architectural decisions.</p>
+<h3 id="1-download-the-notes">1. Download the Notes</h3>
+<p>Here is the PDF with my highlights and architectural sketches.</p>
+<p><a href="pdf/GFS_Research_Paper.pdf"><strong>Download Annotated GFS Paper (PDF)</strong></a></p>
+<hr>
+<h3 id="2-join-the-live-deep-dive-jan-18">2. Join the Live Deep Dive (Jan 18)</h3>
+<p>The notes are the <em>what</em>. The class is the <em>why</em>.</p>
+<p>I am hosting a live, engineer-to-engineer breakdown of this architecture. We will go beyond the paper and discuss how this evolved into <strong>Colossus</strong> and why modern object stores look different.</p>
+<p><strong>When:</strong> <strong>Saturday, Jan 18</strong> from <strong>11:00 AM - 1:00 PM IST</strong></p>
+<p><a href="https://luma.com/8u3o34ms" target="_blank"><strong>👉 Register for the Live Class (Luma)</strong></a></p>
+<p><em>See you in the trenches.</em></p>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+					<nav class="nav tags">
+							<ul class="flat">
+								
+								<li><a href="http://localhost:1313/tags/whitepaper-analysis">Whitepaper Analysis</a></li>
+								
+								<li><a href="http://localhost:1313/tags/data-engineering">Data Engineering</a></li>
+								
+							</ul>
+					</nav>
+				
+			
+		</div></div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> © 2026 - Dhiraj  |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+</body>
+</html>

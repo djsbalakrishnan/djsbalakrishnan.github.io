@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Building a private data center for 10k: Why I Ditched the Raspberry Pi - Dhiraj Balakrishnan</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:url" content="https://dhirajbalakrishnan.dev/posts/building_a_private_data_center_for_10k/">
+	<meta property="og:url" content="http://localhost:1313/posts/building_a_private_data_center_for_10k/">
   <meta property="og:site_name" content="Dhiraj Balakrishnan">
   <meta property="og:title" content="Building a private data center for 10k: Why I Ditched the Raspberry Pi">
   <meta property="og:description" content="In my previous posts, I’ve talked about how perfection is overrated and the importance of just getting things done. Recently, that philosophy was put to the test when I decided it was time to take control of my data and build a dedicated “Digital Headquarters.”">
@@ -18,22 +18,22 @@
   <meta name="twitter:description" content="In my previous posts, I’ve talked about how perfection is overrated and the importance of just getting things done. Recently, that philosophy was put to the test when I decided it was time to take control of my data and build a dedicated “Digital Headquarters.”">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" media="screen" href="https://dhirajbalakrishnan.dev/css/normalize.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="https://dhirajbalakrishnan.dev/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="https://dhirajbalakrishnan.dev/css/custom.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="http://localhost:1313/css/custom.css" />
 	
 
 	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-	<script src="https://dhirajbalakrishnan.dev/js/main.js"></script>
+	<script src="http://localhost:1313/js/main.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 
 <body>
 	<div class="container wrapper post">
-		<link rel="stylesheet" href="https://dhirajbalakrishnan.dev/css/custom.css"> 
+		<link rel="stylesheet" href="http://localhost:1313/css/custom.css"> 
 <div class="header">
-	<base href="https://dhirajbalakrishnan.dev/">
-	<h1 class="site-title"><a href="https://dhirajbalakrishnan.dev/">Dhiraj Balakrishnan</a></h1>
+	<base href="http://localhost:1313/">
+	<h1 class="site-title"><a href="http://localhost:1313/">Dhiraj Balakrishnan</a></h1>
 	<div class="site-description"><h2>Software Engineer</h2><nav class="nav social">
 			<ul class="flat"><a href="https://www.linkedin.com/in/djsbalakrishnan/" title="LinkedIn"><i data-feather="linkedin"></i></a><a href="https://github.com/djsbalakrishnan" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/djsbalakrishnan" title="Twitter"><i data-feather="twitter"></i></a><a href="https://www.youtube.com/@djsbala" title="Youtube"><i data-feather="youtube"></i></a></ul>
 		</nav>
@@ -43,23 +43,23 @@
 		<ul class="flat">
 			
 			<li>
-				<a href="https://dhirajbalakrishnan.dev/posts">Posts</a>
+				<a href="http://localhost:1313/posts">Posts</a>
 			</li>
 			
 			<li>
-				<a href="https://dhirajbalakrishnan.dev/impossible-list">Impossible List</a>
+				<a href="http://localhost:1313/impossible-list">Impossible List</a>
 			</li>
 			
 			<li>
-				<a href="https://dhirajbalakrishnan.dev/newsletter">Newsletter</a>
+				<a href="http://localhost:1313/newsletter">Newsletter</a>
 			</li>
 			
 			<li>
-				<a href="https://dhirajbalakrishnan.dev/setup">Setup</a>
+				<a href="http://localhost:1313/setup">Setup</a>
 			</li>
 			
 			<li>
-				<a href="https://dhirajbalakrishnan.dev/tags">Tags</a>
+				<a href="http://localhost:1313/tags">Tags</a>
 			</li>
 			
 		</ul>
@@ -76,7 +76,7 @@
 			<p>In my previous posts, I’ve talked about how perfection is overrated and the importance of just getting things done. Recently, that philosophy was put to the test when I decided it was time to take control of my data and build a dedicated &ldquo;Digital Headquarters.&rdquo;</p>
 <p>I needed a playground. A place to experiment with automation, host my own tools, and learn Data Engineering concepts <strong>without the &ldquo;meter running&rdquo; anxiety of AWS billing.</strong></p>
 <p>Here is the story of how I built my homelab, the architectural decisions behind the hardware, and the exact terminal commands I used to build the platform.</p>
-<p><img src="https://dhirajbalakrishnan.dev/images/HeroShot.jpg" alt="The Lenovo M700 Tiny sitting in its actual spot in your home, with cables plugged in. Caption: The Digital HQ, running silently in the corner"></p>
+<p><img src="http://localhost:1313/images/HeroShot.jpg" alt="The Lenovo M700 Tiny sitting in its actual spot in your home, with cables plugged in. Caption: The Digital HQ, running silently in the corner"></p>
 <h2 id="the-architecture-decision-why-x86-beats-arm-for-data-engineering">The Architecture Decision: Why x86 Beats ARM for Data Engineering</h2>
 <p>When you decide to host your own services, the first question is always: <em>Where does it live?</em></p>
 <p>My initial instinct was the <strong>Raspberry Pi 5</strong>, the darling of the homelab community. But as a Data Engineer, I had to look beyond the hype and look at the architecture.</p>
@@ -86,7 +86,7 @@
 </ol>
 <h3 id="the-winner-lenovo-thinkcentre-m700-tiny">The Winner: Lenovo ThinkCentre M700 Tiny</h3>
 <p>I settled on a refurbished Lenovo M700 Tiny. It offers a true <a href="https://www.cpubenchmark.net/cpu.php?cpu=Intel&#43;Core&#43;i5-6500&#43;%40&#43;3.20GHz&amp;id=2599" target="_blank">Intel Core i5 (SkyLake)</a> processor. This ensures I can pull any standard Docker image from the hub and it just works; no &ldquo;ARM tax&rdquo; on performance or compatibility.</p>
-<p><img src="https://dhirajbalakrishnan.dev/images/ScaleComparisonShot.jpg" alt="The M700 Tiny next to my phone to show scale"></p>
+<p><img src="http://localhost:1313/images/ScaleComparisonShot.jpg" alt="The M700 Tiny next to my phone to show scale"></p>
 <h4 id="the-negotiation-strategy">The Negotiation Strategy</h4>
 <p>I didn&rsquo;t just buy it online. I visited a local vendor, <strong>Recyclekart</strong>, in Delhi. They listed it for <strong>₹13,500</strong>. I walked in and asked for &ldquo;Grade B&rdquo; hardware explicitly stating I didn&rsquo;t care about cosmetic scratches as long as the silicon was intact. That conversation dropped the price to <strong>₹10,000</strong>.</p>
 <p>Now, many might still consider ₹10k steep for 6th Gen hardware. But we have to be realistic, hardware prices have skyrocketed globally, partly thanks to the AI data center boom sucking up inventory.</p>
@@ -99,7 +99,7 @@
 <h2 id="the-network-pattern-bypassing-cgnat-with-zero-trust">The Network Pattern: Bypassing CGNAT with Zero Trust</h2>
 <p>Connecting a home server to the internet is usually a nightmare because most ISPs put residential connections behind a <strong>CGNAT (Carrier-Grade NAT)</strong>. This makes traditional port forwarding impossible because you don&rsquo;t have a real public IP.</p>
 <p>Instead of fighting the ISP, I bypassed them completely using a <strong>Zero Trust</strong> architecture.</p>
-<p><img src="https://dhirajbalakrishnan.dev/images/FlowDiagram.jpg" alt="Laptop (Tailscale) -&gt; Internet -&gt; [Bypassing ISP Router] -&gt; Lenovo M700 (Tailscale) -&gt; Docker Containers."></p>
+<p><img src="http://localhost:1313/images/FlowDiagram.jpg" alt="Laptop (Tailscale) -&gt; Internet -&gt; [Bypassing ISP Router] -&gt; Lenovo M700 (Tailscale) -&gt; Docker Containers."></p>
 <p><strong>1. The Magic Tunnel (Tailscale)</strong>
 I used Tailscale to create a private, encrypted mesh network. This allows me to SSH into the server from a hotel in Thailand or my parents&rsquo; home in Chennai without exposing port 22 to the public internet.</p>
 <div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#586e75"># Installing Tailscale</span>
@@ -124,7 +124,7 @@ We configured <code>ufw</code> to drop all traffic by default, only allowing the
 </span></span></span><span style="display:flex;"><span><span style="color:#cb4b16"></span>   --restart<span style="color:#719e07">=</span>always <span style="color:#cb4b16">\
 </span></span></span><span style="display:flex;"><span><span style="color:#cb4b16"></span>   -v /var/run/docker.sock:/var/run/docker.sock <span style="color:#cb4b16">\
 </span></span></span><span style="display:flex;"><span><span style="color:#cb4b16"></span>   portainer/portainer-ce:latest
-</span></span></code></pre></div><p><img src="https://dhirajbalakrishnan.dev/images/PortainerStacks.png" alt="Portainer Dashboard - Screenshot showing active containers (n8n, nginx, memos) with green &ldquo;Healthy&rdquo; status."></p>
+</span></span></code></pre></div><p><img src="http://localhost:1313/images/PortainerStacks.png" alt="Portainer Dashboard - Screenshot showing active containers (n8n, nginx, memos) with green &ldquo;Healthy&rdquo; status."></p>
 <h3 id="core-workloads">Core Workloads</h3>
 <p>Currently, the Digital HQ runs three mission-critical apps:</p>
 <p><strong>1. Nginx Proxy Manager (The Ingress Controller)</strong>
@@ -148,7 +148,7 @@ To handle SSL termination without a static IP, I used a <strong>DNS Challenge</s
 </span></span><span style="display:flex;"><span>   networks:
 </span></span><span style="display:flex;"><span>   proxy_net:
 </span></span><span style="display:flex;"><span>       external: <span style="color:#b58900">true</span>
-</span></span></code></pre></div><p><img src="https://dhirajbalakrishnan.dev/images/SecureConnection.png" alt="The Victory - Screenshot of browser address bar showing the green SSL Padlock next to your domain."></p>
+</span></span></code></pre></div><p><img src="http://localhost:1313/images/SecureConnection.png" alt="The Victory - Screenshot of browser address bar showing the green SSL Padlock next to your domain."></p>
 <p><strong>2. n8n (The Orchestrator)</strong>
 This is my self-hosted automation bus, connecting APIs and routing alerts.</p>
 <div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>   version: <span style="color:#2aa198">&#39;3&#39;</span>
@@ -213,7 +213,7 @@ A lightweight, privacy-focused tool for capturing code snippets and engineering 
 		</div></div>
 	<div class="footer wrapper">
 	<nav class="nav">
-		<div> © 2025 - Dhiraj  |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+		<div> © 2026 - Dhiraj  |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
 	</nav>
 </div>
 

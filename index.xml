@@ -2,95 +2,95 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dhiraj Balakrishnan</title>
-    <link>http://localhost:1313/</link>
+    <link>https://dhirajbalakrishnan.dev/</link>
     <description>Recent content on Dhiraj Balakrishnan</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© 2026 - Dhiraj </copyright>
     <lastBuildDate>Sun, 11 Jan 2026 00:00:00 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dhirajbalakrishnan.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Analysing GFS</title>
-      <link>http://localhost:1313/posts/analysing-gfs/</link>
+      <link>https://dhirajbalakrishnan.dev/posts/analysing-gfs/</link>
       <pubDate>Sun, 11 Jan 2026 00:00:00 +0530</pubDate>
-      <guid>http://localhost:1313/posts/analysing-gfs/</guid>
+      <guid>https://dhirajbalakrishnan.dev/posts/analysing-gfs/</guid>
       <description>&lt;p&gt;Distributed systems aren&amp;rsquo;t learned by memorizing definitions. They are learned by studying the trade-offs made by the giants.&lt;/p&gt;&#xA;&lt;p&gt;The &lt;strong&gt;Google File System (GFS)&lt;/strong&gt; paper (2003) is the grandfather of modern Big Data (HDFS, S3, &lt;strong&gt;Colossus&lt;/strong&gt;). But let&amp;rsquo;s be honest—reading a 15-page academic paper is dry.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Building a private data center for 10k: Why I Ditched the Raspberry Pi</title>
-      <link>http://localhost:1313/posts/building_a_private_data_center_for_10k/</link>
+      <link>https://dhirajbalakrishnan.dev/posts/building_a_private_data_center_for_10k/</link>
       <pubDate>Sun, 21 Dec 2025 18:39:10 +0530</pubDate>
-      <guid>http://localhost:1313/posts/building_a_private_data_center_for_10k/</guid>
+      <guid>https://dhirajbalakrishnan.dev/posts/building_a_private_data_center_for_10k/</guid>
       <description>&lt;p&gt;In my previous posts, I’ve talked about how perfection is overrated and the importance of just getting things done. Recently, that philosophy was put to the test when I decided it was time to take control of my data and build a dedicated &amp;ldquo;Digital Headquarters.&amp;rdquo;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Journal #02</title>
-      <link>http://localhost:1313/posts/journal_02/</link>
+      <link>https://dhirajbalakrishnan.dev/posts/journal_02/</link>
       <pubDate>Sun, 01 Jun 2025 12:15:21 +0530</pubDate>
-      <guid>http://localhost:1313/posts/journal_02/</guid>
+      <guid>https://dhirajbalakrishnan.dev/posts/journal_02/</guid>
       <description>&lt;h3 id=&#34;-leetcode-problem-of-the-week&#34;&gt;🔧 LeetCode Problem of the Week&lt;/h3&gt;&#xA;&lt;p&gt;This week, we&amp;rsquo;re diving into a LeetCode question that, while simple, really gets you thinking about different approaches. We&amp;rsquo;ll break down a few ways to solve it and then land on the most optimized one. Here’s the question:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Journal #01</title>
-      <link>http://localhost:1313/posts/journal_01/</link>
+      <link>https://dhirajbalakrishnan.dev/posts/journal_01/</link>
       <pubDate>Sun, 18 May 2025 11:54:31 +0530</pubDate>
-      <guid>http://localhost:1313/posts/journal_01/</guid>
+      <guid>https://dhirajbalakrishnan.dev/posts/journal_01/</guid>
       <description>&lt;h3 id=&#34;-leetcode-problem-of-the-week&#34;&gt;🔧 LeetCode Problem of the Week&lt;/h3&gt;&#xA;&lt;p&gt;This week&amp;rsquo;s LeetCode problem is pretty straightforward, but it hits on a really fundamental idea in DSA.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Newsletter</title>
-      <link>http://localhost:1313/newsletter/</link>
+      <link>https://dhirajbalakrishnan.dev/newsletter/</link>
       <pubDate>Thu, 08 May 2025 09:00:00 +0530</pubDate>
-      <guid>http://localhost:1313/newsletter/</guid>
+      <guid>https://dhirajbalakrishnan.dev/newsletter/</guid>
       <description>&lt;h4 id=&#34;hey-there&#34;&gt;Hey, there!&lt;/h4&gt;&#xA;&lt;p&gt;Alright, so here&amp;rsquo;s the deal with the newsletter – you&amp;rsquo;re probably wondering what&amp;rsquo;s actually going to land in your inbox each week, right? Think of it as your go-to buddy for all things beginner software engineering.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How We Cooked Up a Podcast in 4 Hours for Less Than the Cost of a Pizza</title>
-      <link>http://localhost:1313/posts/how-we-cooked-up-a-podcast/</link>
+      <link>https://dhirajbalakrishnan.dev/posts/how-we-cooked-up-a-podcast/</link>
       <pubDate>Sun, 16 Jul 2023 11:29:21 +0530</pubDate>
-      <guid>http://localhost:1313/posts/how-we-cooked-up-a-podcast/</guid>
+      <guid>https://dhirajbalakrishnan.dev/posts/how-we-cooked-up-a-podcast/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Starting a podcast with a friend doesn&amp;rsquo;t have to be as complicated as a five-course meal. With a dash of creativity, a sprinkle of laughter, and the right ingredients, you can whip up your own brand in no time.&lt;/p&gt;</description>
     </item>
     <item>
       <title>My Desk Setup</title>
-      <link>http://localhost:1313/setup/</link>
+      <link>https://dhirajbalakrishnan.dev/setup/</link>
       <pubDate>Sun, 14 Aug 2022 10:42:16 +0530</pubDate>
-      <guid>http://localhost:1313/setup/</guid>
+      <guid>https://dhirajbalakrishnan.dev/setup/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;images/DeskSetup.jpg&#34; alt=&#34;Desk Setup&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-is-on-my-desk&#34;&gt;What is on my Desk?&lt;/h3&gt;&#xA;&lt;p&gt;I have always been a sucker for good desk setups, and I have wanted one ever since I saw &lt;a href=&#34;https://www.youtube.com/watch?v=Ij9njxJUyUQ&#34; target=&#34;_blank&#34;&gt;MKBHD&#39;s youtube video&lt;/a&gt;. While my desk setup is not glamourous, it is functional, and I am happy with its current state. So, here we go!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Organizing a Hackathon During Covid Pandemic</title>
-      <link>http://localhost:1313/posts/organizing-a-hackathon-during-covid-pandemic/</link>
+      <link>https://dhirajbalakrishnan.dev/posts/organizing-a-hackathon-during-covid-pandemic/</link>
       <pubDate>Sat, 29 Aug 2020 22:22:10 +0530</pubDate>
-      <guid>http://localhost:1313/posts/organizing-a-hackathon-during-covid-pandemic/</guid>
+      <guid>https://dhirajbalakrishnan.dev/posts/organizing-a-hackathon-during-covid-pandemic/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;You just fight to live another day.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Just after completing my term as an Innovation Committee Lead for ITDP Hyderabad, I got an opportunity to work with the DELL TIDE Hackathon team. It was sheer coincidence that I met the right person at the right place, at the right time, with the right response. Little did I know back then that it would have such a profound impact on my work life. In this blog post, I will be journaling about my experience conducting my first Hackathon for Dell India and Malaysia in association with Dell TIDE Team. Let’s get started.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ipl Analytics</title>
-      <link>http://localhost:1313/projects/ipl-analytics/</link>
+      <link>https://dhirajbalakrishnan.dev/projects/ipl-analytics/</link>
       <pubDate>Fri, 10 Jul 2020 22:22:34 +0530</pubDate>
-      <guid>http://localhost:1313/projects/ipl-analytics/</guid>
+      <guid>https://dhirajbalakrishnan.dev/projects/ipl-analytics/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;images/IPL.jpg&#34; alt=&#34;Dharamshala&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;&#xA;&lt;p&gt;We’ve all been engulfed by the uncertainty that is COVID-19. It doesn’t seem to be going anywhere anytime soon. Of all the stuff that has come to an indefinite standstill, sporting action, especially cricket is something that we are missing the most.&lt;/p&gt;</description>
     </item>
     <item>
       <title>5 Leadership Lessons From My Personal Experience</title>
-      <link>http://localhost:1313/posts/5-leadership-lessons-from-my-personal-experience/</link>
+      <link>https://dhirajbalakrishnan.dev/posts/5-leadership-lessons-from-my-personal-experience/</link>
       <pubDate>Fri, 19 Jun 2020 22:21:47 +0530</pubDate>
-      <guid>http://localhost:1313/posts/5-leadership-lessons-from-my-personal-experience/</guid>
+      <guid>https://dhirajbalakrishnan.dev/posts/5-leadership-lessons-from-my-personal-experience/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;It is not the genius at the top giving directions that makes people great. It is great people that make the guy at the top look like a genius.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Perfection Is Overrated</title>
-      <link>http://localhost:1313/posts/perfection-is-overrated/</link>
+      <link>https://dhirajbalakrishnan.dev/posts/perfection-is-overrated/</link>
       <pubDate>Mon, 15 Jun 2020 22:21:23 +0530</pubDate>
-      <guid>http://localhost:1313/posts/perfection-is-overrated/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Practice makes Perfect&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/Perfection.jpg&#34; alt=&#34;Perfection&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I have a confession to make, I have been writing and re-writing this post for over two months now. During this interim, the blog’s title has changed thrice and the blog content has changed so much that the initial draft is nowhere close to this post. Having said this, you might be wondering why, and I don’t blame you for it. After all, this has been a real pain point for me and at one point I thought this is impossible for me to accomplish. Trust me, by the end of this post you will get to know why it took so long for me in the first place, but, if you are in the same boat as I was, I hope this will give you a reason to break out of this vicious infinite loop.&lt;/p&gt;</description>
+      <guid>https://dhirajbalakrishnan.dev/posts/perfection-is-overrated/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Practice makes Perfect&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://dhirajbalakrishnan.dev/images/Perfection.jpg&#34; alt=&#34;Perfection&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I have a confession to make, I have been writing and re-writing this post for over two months now. During this interim, the blog’s title has changed thrice and the blog content has changed so much that the initial draft is nowhere close to this post. Having said this, you might be wondering why, and I don’t blame you for it. After all, this has been a real pain point for me and at one point I thought this is impossible for me to accomplish. Trust me, by the end of this post you will get to know why it took so long for me in the first place, but, if you are in the same boat as I was, I hope this will give you a reason to break out of this vicious infinite loop.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Impossible List</title>
-      <link>http://localhost:1313/impossible-list/</link>
+      <link>https://dhirajbalakrishnan.dev/impossible-list/</link>
       <pubDate>Sat, 06 Jun 2020 22:20:05 +0530</pubDate>
-      <guid>http://localhost:1313/impossible-list/</guid>
+      <guid>https://dhirajbalakrishnan.dev/impossible-list/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;We all die. The goal isn’t to live forever, the goal is to create something that will.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;img src=&#34;images/ImpossibleList.jpg&#34; alt=&#34;Impossible List&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>

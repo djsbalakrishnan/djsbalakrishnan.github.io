@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Whitepaper Analysis on Dhiraj Balakrishnan</title>
-    <link>http://localhost:1313/tags/whitepaper-analysis/</link>
+    <link>https://dhirajbalakrishnan.dev/tags/whitepaper-analysis/</link>
     <description>Recent content in Whitepaper Analysis on Dhiraj Balakrishnan</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© 2026 - Dhiraj </copyright>
     <lastBuildDate>Sun, 11 Jan 2026 00:00:00 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/whitepaper-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dhirajbalakrishnan.dev/tags/whitepaper-analysis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Analysing GFS</title>
-      <link>http://localhost:1313/posts/analysing-gfs/</link>
+      <link>https://dhirajbalakrishnan.dev/posts/analysing-gfs/</link>
       <pubDate>Sun, 11 Jan 2026 00:00:00 +0530</pubDate>
-      <guid>http://localhost:1313/posts/analysing-gfs/</guid>
+      <guid>https://dhirajbalakrishnan.dev/posts/analysing-gfs/</guid>
       <description>&lt;p&gt;Distributed systems aren&amp;rsquo;t learned by memorizing definitions. They are learned by studying the trade-offs made by the giants.&lt;/p&gt;&#xA;&lt;p&gt;The &lt;strong&gt;Google File System (GFS)&lt;/strong&gt; paper (2003) is the grandfather of modern Big Data (HDFS, S3, &lt;strong&gt;Colossus&lt;/strong&gt;). But let&amp;rsquo;s be honest—reading a 15-page academic paper is dry.&lt;/p&gt;</description>
     </item>
   </channel>

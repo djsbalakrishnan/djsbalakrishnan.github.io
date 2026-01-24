@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© 2026 - Dhiraj </copyright>
-    <lastBuildDate>Sun, 11 Jan 2026 00:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 24 Jan 2026 13:30:00 +0530</lastBuildDate>
     <atom:link href="https://dhirajbalakrishnan.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Journal #03</title>
+      <link>https://dhirajbalakrishnan.dev/posts/journal_03/</link>
+      <pubDate>Sat, 24 Jan 2026 13:30:00 +0530</pubDate>
+      <guid>https://dhirajbalakrishnan.dev/posts/journal_03/</guid>
+      <description>&lt;h3 id=&#34;-leetcode-problem-of-the-week&#34;&gt;🔧 LeetCode Problem of the Week&lt;/h3&gt;&#xA;&lt;p&gt;This week, we&amp;rsquo;re diving into a LeetCode question that looks simple on the surface but is actually a perfect proxy for understanding how we handle memory constraints. Here’s the question:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Analysing GFS</title>
       <link>https://dhirajbalakrishnan.dev/posts/analysing-gfs/</link>

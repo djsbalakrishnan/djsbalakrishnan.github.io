@@ -2,19 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://dhirajbalakrishnan.dev/</loc>
+    <lastmod>2026-01-24T13:30:00+05:30</lastmod>
+  </url><url>
+    <loc>https://dhirajbalakrishnan.dev/tags/journal/</loc>
+    <lastmod>2026-01-24T13:30:00+05:30</lastmod>
+  </url><url>
+    <loc>https://dhirajbalakrishnan.dev/posts/journal_03/</loc>
+    <lastmod>2026-01-24T13:30:00+05:30</lastmod>
+  </url><url>
+    <loc>https://dhirajbalakrishnan.dev/tags/newsletter/</loc>
+    <lastmod>2026-01-24T13:30:00+05:30</lastmod>
+  </url><url>
+    <loc>https://dhirajbalakrishnan.dev/posts/</loc>
+    <lastmod>2026-01-24T13:30:00+05:30</lastmod>
+  </url><url>
+    <loc>https://dhirajbalakrishnan.dev/tags/system-design/</loc>
+    <lastmod>2026-01-24T13:30:00+05:30</lastmod>
+  </url><url>
+    <loc>https://dhirajbalakrishnan.dev/tags/</loc>
+    <lastmod>2026-01-24T13:30:00+05:30</lastmod>
+  </url><url>
     <loc>https://dhirajbalakrishnan.dev/posts/analysing-gfs/</loc>
     <lastmod>2026-01-11T00:00:00+05:30</lastmod>
   </url><url>
     <loc>https://dhirajbalakrishnan.dev/tags/data-engineering/</loc>
-    <lastmod>2026-01-11T00:00:00+05:30</lastmod>
-  </url><url>
-    <loc>https://dhirajbalakrishnan.dev/</loc>
-    <lastmod>2026-01-11T00:00:00+05:30</lastmod>
-  </url><url>
-    <loc>https://dhirajbalakrishnan.dev/posts/</loc>
-    <lastmod>2026-01-11T00:00:00+05:30</lastmod>
-  </url><url>
-    <loc>https://dhirajbalakrishnan.dev/tags/</loc>
     <lastmod>2026-01-11T00:00:00+05:30</lastmod>
   </url><url>
     <loc>https://dhirajbalakrishnan.dev/tags/whitepaper-analysis/</loc>
@@ -23,13 +35,7 @@
     <loc>https://dhirajbalakrishnan.dev/posts/building_a_private_data_center_for_10k/</loc>
     <lastmod>2025-12-21T18:39:10+05:30</lastmod>
   </url><url>
-    <loc>https://dhirajbalakrishnan.dev/tags/journal/</loc>
-    <lastmod>2025-06-01T12:15:21+05:30</lastmod>
-  </url><url>
     <loc>https://dhirajbalakrishnan.dev/posts/journal_02/</loc>
-    <lastmod>2025-06-01T12:15:21+05:30</lastmod>
-  </url><url>
-    <loc>https://dhirajbalakrishnan.dev/tags/newsletter/</loc>
     <lastmod>2025-06-01T12:15:21+05:30</lastmod>
   </url><url>
     <loc>https://dhirajbalakrishnan.dev/posts/journal_01/</loc>

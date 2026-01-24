@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Journal #03 - Dhiraj Balakrishnan</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:url" content="https://dhirajbalakrishnan.dev/posts/journal_03/">
+  <meta property="og:site_name" content="Dhiraj Balakrishnan">
+  <meta property="og:title" content="Journal #03">
+  <meta property="og:description" content="🔧 LeetCode Problem of the Week This week, we’re diving into a LeetCode question that looks simple on the surface but is actually a perfect proxy for understanding how we handle memory constraints. Here’s the question:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-01-24T13:30:00+05:30">
+    <meta property="article:modified_time" content="2026-01-24T13:30:00+05:30">
+    <meta property="article:tag" content="Journal">
+    <meta property="article:tag" content="NewsLetter">
+    <meta property="article:tag" content="System Design">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Journal #03">
+  <meta name="twitter:description" content="🔧 LeetCode Problem of the Week This week, we’re diving into a LeetCode question that looks simple on the surface but is actually a perfect proxy for understanding how we handle memory constraints. Here’s the question:">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://dhirajbalakrishnan.dev/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://dhirajbalakrishnan.dev/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="https://dhirajbalakrishnan.dev/css/custom.css" />
+	
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="https://dhirajbalakrishnan.dev/js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<link rel="stylesheet" href="https://dhirajbalakrishnan.dev/css/custom.css"> 
+<div class="header">
+	<base href="https://dhirajbalakrishnan.dev/">
+	<h1 class="site-title"><a href="https://dhirajbalakrishnan.dev/">Dhiraj Balakrishnan</a></h1>
+	<div class="site-description"><h2>Software Engineer</h2><nav class="nav social">
+			<ul class="flat"><a href="https://www.linkedin.com/in/djsbalakrishnan/" title="LinkedIn"><i data-feather="linkedin"></i></a><a href="https://github.com/djsbalakrishnan" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/djsbalakrishnan" title="Twitter"><i data-feather="twitter"></i></a><a href="https://www.youtube.com/@djsbala" title="Youtube"><i data-feather="youtube"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="https://dhirajbalakrishnan.dev/posts">Posts</a>
+			</li>
+			
+			<li>
+				<a href="https://dhirajbalakrishnan.dev/impossible-list">Impossible-List</a>
+			</li>
+			
+			<li>
+				<a href="https://dhirajbalakrishnan.dev/memento-mori" target="_blank">Memento-Mori</a>
+			</li>
+			
+			<li>
+				<a href="https://dhirajbalakrishnan.dev/setup">Setup</a>
+			</li>
+			
+			<li>
+				<a href="https://dhirajbalakrishnan.dev/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Journal #03</h1>
+			<div class="meta">Posted at &mdash; Jan 24, 2026</div>
+		</div>
+
+		<div class="markdown">
+			<h3 id="-leetcode-problem-of-the-week">🔧 LeetCode Problem of the Week</h3>
+<p>This week, we&rsquo;re diving into a LeetCode question that looks simple on the surface but is actually a perfect proxy for understanding how we handle memory constraints. Here’s the question:</p>
+<blockquote>
+<p>Given an array <code>nums</code> containing <code>n</code> distinct numbers in the range <code>[0, n]</code>, return the only number in the range that is missing from the array.</p></blockquote>
+<p>You can find the problem right here: <a href="https://leetcode.com/problems/missing-number/" target="_blank">Missing Number</a></p>
+<p>Now, the brute-force instinct is to sort the array first. But standard sorting takes <code>O(n log n)</code> time. In a system processing millions of entries, that CPU cost is too expensive.</p>
+<p>The next logical step is to use a <code>HashSet</code> to store all values and check what&rsquo;s missing. That drops the time to <code>O(n)</code>, but it costs <code>O(n)</code> in extra memory. If you are working on an embedded system or a high-throughput data pipeline, doubling your memory footprint just to find a single missing value is unacceptable.</p>
+<p>So, how do we solve this in <strong>linear time</strong> with <strong>zero additional space</strong>?</p>
+<p>We go down to the metal and use <strong>Bit Manipulation</strong>, specifically the <code>XOR</code> (Exclusive OR) operator.</p>
+<p>The fundamental property of XOR is that XORing two identical numbers cancels them out (returns 0), and XORing any number with 0 returns the number itself. If we XOR all the indices <code>[0 to n]</code> and then XOR that result with all the values present in the array, the duplicates will cancel each other out. The only value left standing will be our missing number.</p>
+<p>It is a beautiful, highly efficient solution used frequently in network packet reconstruction and data integrity checks.</p>
+<h3 id="-projects--articles-im-excited-about">🌍 Projects &amp; Articles I’m Excited About</h3>
+<p>I’m currently writing this from Chennai, spending the Republic Day long weekend with my mother.</p>
+<p>As software engineers, we talk a lot about &ldquo;Garbage Collection&rdquo; and &ldquo;Technical Debt&rdquo; in our codebases, but we rarely apply it to our physical lives. This weekend, my main project isn&rsquo;t on a screen. It’s helping my mom do a massive physical refactoring of the house; auditing the kitchen, organizing the top shelves, and purging old books to donate to the local library. Clearing physical clutter has a direct correlation to clearing mental bandwidth.</p>
+<p>On the professional front, I’m heavily utilizing what I call the &ldquo;Double-Dip Strategy&rdquo; (a variant of the Feynman Technique). Lately, I&rsquo;ve been helping a few friends and peers prep for their interviews by breaking down fundamental computer science concepts for them. Instead of just brushing up on the basics to help them out, I am using this as a forcing function to master the absolute hardest, edge-case variations of those topics for my own Staff-level upskilling.</p>
+<p>If you want to master a complex topic like Distributed Transactions or Consistent Hashing, don&rsquo;t just read about it; try explaining it to a room of 50 engineers. That is the ultimate test of knowledge.</p>
+<h3 id="-essential-resources-for-software-engineers">🛠️ Essential Resources for Software Engineers</h3>
+<ul>
+<li><a href="https://www.dhirajbalakrishnan.dev/memento-mori/" target="_blank">Memento Mori Dashboard</a> - I just built this live life-calendar. It visualizes the exact weeks of your life passing by. It is the ultimate productivity hack, when you see your life&rsquo;s weeks ticking away on your screen, you stop wasting time on useless meetings and start building.</li>
+</ul>
+<h3 id="-music-to-fuel-your-work">🎧 Music to Fuel Your Work</h3>
+<p>I have been listening to <a href="https://music.youtube.com/watch?v=9TvBBYmhd14" target="_blank">The One</a> on loop lately. The rap section in this song hits hard.</p>
+<p>Cheers!</p>
+<div style="padding: 20px; display: flex; justify-content: center;">
+    <iframe 
+        src="https://djsbalakrishnan.substack.com/embed" 
+        width="480" 
+        height="150" 
+        frameborder="0" 
+        scrolling="no"
+        style="display: block; margin: 0 auto;"
+    >
+    </iframe>
+</div>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+					<nav class="nav tags">
+							<ul class="flat">
+								
+								<li><a href="https://dhirajbalakrishnan.dev/tags/journal">Journal</a></li>
+								
+								<li><a href="https://dhirajbalakrishnan.dev/tags/newsletter">NewsLetter</a></li>
+								
+								<li><a href="https://dhirajbalakrishnan.dev/tags/system-design">System Design</a></li>
+								
+							</ul>
+					</nav>
+				
+			
+		</div></div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> © 2026 - Dhiraj  |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+</body>
+</html>

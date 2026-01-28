@@ -2,8 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://dhirajbalakrishnan.dev/tags/data-engineering/</loc>
+    <lastmod>2026-01-28T16:37:14+05:30</lastmod>
+  </url><url>
     <loc>https://dhirajbalakrishnan.dev/</loc>
-    <lastmod>2026-01-24T13:30:00+05:30</lastmod>
+    <lastmod>2026-01-28T16:37:14+05:30</lastmod>
+  </url><url>
+    <loc>https://dhirajbalakrishnan.dev/posts/</loc>
+    <lastmod>2026-01-28T16:37:14+05:30</lastmod>
+  </url><url>
+    <loc>https://dhirajbalakrishnan.dev/tags/</loc>
+    <lastmod>2026-01-28T16:37:14+05:30</lastmod>
+  </url><url>
+    <loc>https://dhirajbalakrishnan.dev/tags/web3/</loc>
+    <lastmod>2026-01-28T16:37:14+05:30</lastmod>
+  </url><url>
+    <loc>https://dhirajbalakrishnan.dev/posts/why_i_am_interested_in_blockchain_as_a_de/</loc>
+    <lastmod>2026-01-28T16:37:14+05:30</lastmod>
   </url><url>
     <loc>https://dhirajbalakrishnan.dev/tags/journal/</loc>
     <lastmod>2026-01-24T13:30:00+05:30</lastmod>
@@ -14,19 +29,10 @@
     <loc>https://dhirajbalakrishnan.dev/tags/newsletter/</loc>
     <lastmod>2026-01-24T13:30:00+05:30</lastmod>
   </url><url>
-    <loc>https://dhirajbalakrishnan.dev/posts/</loc>
-    <lastmod>2026-01-24T13:30:00+05:30</lastmod>
-  </url><url>
     <loc>https://dhirajbalakrishnan.dev/tags/system-design/</loc>
     <lastmod>2026-01-24T13:30:00+05:30</lastmod>
   </url><url>
-    <loc>https://dhirajbalakrishnan.dev/tags/</loc>
-    <lastmod>2026-01-24T13:30:00+05:30</lastmod>
-  </url><url>
     <loc>https://dhirajbalakrishnan.dev/posts/analysing-gfs/</loc>
-    <lastmod>2026-01-11T00:00:00+05:30</lastmod>
-  </url><url>
-    <loc>https://dhirajbalakrishnan.dev/tags/data-engineering/</loc>
     <lastmod>2026-01-11T00:00:00+05:30</lastmod>
   </url><url>
     <loc>https://dhirajbalakrishnan.dev/tags/whitepaper-analysis/</loc>

@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© 2026 - Dhiraj </copyright>
-    <lastBuildDate>Sat, 24 Jan 2026 13:30:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 28 Jan 2026 16:37:14 +0530</lastBuildDate>
     <atom:link href="https://dhirajbalakrishnan.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data Engineering</title>
+      <link>https://dhirajbalakrishnan.dev/tags/data-engineering/</link>
+      <pubDate>Wed, 28 Jan 2026 16:37:14 +0530</pubDate>
+      <guid>https://dhirajbalakrishnan.dev/tags/data-engineering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web3</title>
+      <link>https://dhirajbalakrishnan.dev/tags/web3/</link>
+      <pubDate>Wed, 28 Jan 2026 16:37:14 +0530</pubDate>
+      <guid>https://dhirajbalakrishnan.dev/tags/web3/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Journal</title>
       <link>https://dhirajbalakrishnan.dev/tags/journal/</link>
@@ -28,13 +42,6 @@
       <link>https://dhirajbalakrishnan.dev/tags/system-design/</link>
       <pubDate>Sat, 24 Jan 2026 13:30:00 +0530</pubDate>
       <guid>https://dhirajbalakrishnan.dev/tags/system-design/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Data Engineering</title>
-      <link>https://dhirajbalakrishnan.dev/tags/data-engineering/</link>
-      <pubDate>Sun, 11 Jan 2026 00:00:00 +0530</pubDate>
-      <guid>https://dhirajbalakrishnan.dev/tags/data-engineering/</guid>
       <description></description>
     </item>
     <item>

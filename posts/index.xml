@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© 2026 - Dhiraj </copyright>
-    <lastBuildDate>Wed, 28 Jan 2026 16:37:14 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 00:49:02 +0530</lastBuildDate>
     <atom:link href="https://dhirajbalakrishnan.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Journal #04</title>
+      <link>https://dhirajbalakrishnan.dev/posts/journal_04/</link>
+      <pubDate>Sun, 03 May 2026 00:49:02 +0530</pubDate>
+      <guid>https://dhirajbalakrishnan.dev/posts/journal_04/</guid>
+      <description>&lt;h3 id=&#34;-leetcode-problem-of-the-week&#34;&gt;🔧 LeetCode Problem of the Week&lt;/h3&gt;&#xA;&lt;p&gt;This week, we are diving into a classic linked list problem. Here is the question:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Why I am interested in blockchain as a Data Engineer</title>
       <link>https://dhirajbalakrishnan.dev/posts/why_i_am_interested_in_blockchain_as_a_de/</link>
